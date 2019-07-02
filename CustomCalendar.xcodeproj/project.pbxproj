@@ -13,6 +13,7 @@
 		5E2FE10D22CBE468001AFB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2FE10C22CBE468001AFB4B /* Assets.xcassets */; };
 		5E2FE11022CBE468001AFB4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2FE10E22CBE468001AFB4B /* LaunchScreen.storyboard */; };
 		5E2FE11322CBE468001AFB4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2FE11222CBE468001AFB4B /* main.m */; };
+		5E2FE11B22CC03BF001AFB4B /* SelectDayCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2FE11A22CC03BF001AFB4B /* SelectDayCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		5E2FE10F22CBE468001AFB4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E2FE11122CBE468001AFB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E2FE11222CBE468001AFB4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E2FE11922CC03BF001AFB4B /* SelectDayCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectDayCollectionViewCell.h; sourceTree = "<group>"; };
+		5E2FE11A22CC03BF001AFB4B /* SelectDayCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectDayCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				5E2FE10422CBE465001AFB4B /* AppDelegate.m */,
 				5E2FE10622CBE465001AFB4B /* ViewController.h */,
 				5E2FE10722CBE465001AFB4B /* ViewController.m */,
+				5E2FE11922CC03BF001AFB4B /* SelectDayCollectionViewCell.h */,
+				5E2FE11A22CC03BF001AFB4B /* SelectDayCollectionViewCell.m */,
 				5E2FE10922CBE465001AFB4B /* Main.storyboard */,
 				5E2FE10C22CBE468001AFB4B /* Assets.xcassets */,
 				5E2FE10E22CBE468001AFB4B /* LaunchScreen.storyboard */,
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E2FE10822CBE465001AFB4B /* ViewController.m in Sources */,
+				5E2FE11B22CC03BF001AFB4B /* SelectDayCollectionViewCell.m in Sources */,
 				5E2FE11322CBE468001AFB4B /* main.m in Sources */,
 				5E2FE10522CBE465001AFB4B /* AppDelegate.m in Sources */,
 			);
