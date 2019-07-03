@@ -22,7 +22,10 @@
   
     self.window.rootViewController = navigationController;
     
+    [[UINavigationBar appearance] setBackgroundImage: [UIImage new]
+                                       forBarMetrics: UIBarMetricsDefault];
     
+    [UINavigationBar appearance].shadowImage = [UIImage new];
     return YES;
 }
 

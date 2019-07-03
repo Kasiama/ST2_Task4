@@ -8,14 +8,38 @@
 
 #import "SelectDayCollectionViewCell.h"
 
+@interface SelectDayCollectionViewCell ()
 
+@property (strong, nonatomic) UIView *selectionView;
+
+@end
 
 
 @implementation SelectDayCollectionViewCell
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
+        _date = [NSDate date];
         self.contentView.backgroundColor = [UIColor colorWithRed:0.012 green:0.459 blue:0.580 alpha:1];;
+        
+        self.selectionView = [UIView new];
+        self.selectionView.translatesAutoresizingMaskIntoConstraints = NO;
+        [self.contentView addSubview:self.selectionView];
+        self.selectionView.backgroundColor = [UIColor redColor];
+        self.selectionView.hidden = YES;
+        
+        const CGFloat selectionViewDiameter = 50.0;
+        [NSLayoutConstraint activateConstraints:@[
+                                                  [self.selectionView.centerXAnchor constraintEqualToAnchor:self.contentView.centerXAnchor],
+                                                  [self.selectionView.centerYAnchor constraintEqualToAnchor:self.contentView.centerYAnchor constant:-5],
+                                                  [self.selectionView.widthAnchor constraintEqualToConstant:selectionViewDiameter],
+                                                  [self.selectionView.heightAnchor constraintEqualToConstant:selectionViewDiameter],
+                                                  ]
+         ];
+        self.selectionView.layer.cornerRadius = selectionViewDiameter / 2;
+        self.selectionView.layer.masksToBounds = YES;
+        
+        
         
         
         self.numberLabel = [UILabel new];
@@ -54,6 +78,16 @@
                                                   ]];
     }
     return self;
+}
+
+- (void) setSelected:(BOOL)selected {
+    [super setSelected:selected];
+    if (selected) {
+        self.selectionView.hidden = NO;
+    } else {
+        self.selectionView.hidden = YES;
+    }
+    
 }
 
 

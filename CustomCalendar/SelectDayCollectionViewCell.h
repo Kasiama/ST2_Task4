@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) UILabel *numberLabel;
 @property (strong, nonatomic) UILabel *wordLabel;
 @property (strong, nonatomic) UIView *dotView;
+
+@property (strong, nonatomic) NSDate *date;
+
 @end
 
 NS_ASSUME_NONNULL_END
