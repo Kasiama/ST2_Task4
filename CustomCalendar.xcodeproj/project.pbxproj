@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0CBDF722CCEE5100DC17FD /* Eventlayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0CBDF622CCEE5100DC17FD /* Eventlayout.m */; };
+		5E0CBDFA22CCEF5500DC17FD /* GridLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0CBDF922CCEF5500DC17FD /* GridLine.m */; };
+		5E0CBDFD22CCEF6A00DC17FD /* TimeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0CBDFC22CCEF6A00DC17FD /* TimeLabel.m */; };
+		5E0CBE0022CCEF8100DC17FD /* CurrentTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0CBDFF22CCEF8100DC17FD /* CurrentTime.m */; };
+		5E0CBE0322CCF08200DC17FD /* DayEventViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0CBE0222CCF08200DC17FD /* DayEventViewManager.m */; };
+		5E0CBE0622CCF23200DC17FD /* EventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0CBE0522CCF23200DC17FD /* EventCollectionViewCell.m */; };
 		5E2FE10522CBE465001AFB4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2FE10422CBE465001AFB4B /* AppDelegate.m */; };
 		5E2FE10822CBE465001AFB4B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2FE10722CBE465001AFB4B /* ViewController.m */; };
 		5E2FE10B22CBE465001AFB4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2FE10922CBE465001AFB4B /* Main.storyboard */; };
@@ -17,6 +23,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E0CBDF522CCEE5100DC17FD /* Eventlayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Eventlayout.h; sourceTree = "<group>"; };
+		5E0CBDF622CCEE5100DC17FD /* Eventlayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Eventlayout.m; sourceTree = "<group>"; };
+		5E0CBDF822CCEF5500DC17FD /* GridLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridLine.h; sourceTree = "<group>"; };
+		5E0CBDF922CCEF5500DC17FD /* GridLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridLine.m; sourceTree = "<group>"; };
+		5E0CBDFB22CCEF6A00DC17FD /* TimeLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeLabel.h; sourceTree = "<group>"; };
+		5E0CBDFC22CCEF6A00DC17FD /* TimeLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeLabel.m; sourceTree = "<group>"; };
+		5E0CBDFE22CCEF8100DC17FD /* CurrentTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentTime.h; sourceTree = "<group>"; };
+		5E0CBDFF22CCEF8100DC17FD /* CurrentTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrentTime.m; sourceTree = "<group>"; };
+		5E0CBE0122CCF08200DC17FD /* DayEventViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayEventViewManager.h; sourceTree = "<group>"; };
+		5E0CBE0222CCF08200DC17FD /* DayEventViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayEventViewManager.m; sourceTree = "<group>"; };
+		5E0CBE0422CCF23200DC17FD /* EventCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventCollectionViewCell.h; sourceTree = "<group>"; };
+		5E0CBE0522CCF23200DC17FD /* EventCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventCollectionViewCell.m; sourceTree = "<group>"; };
 		5E2FE10022CBE465001AFB4B /* CustomCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2FE10322CBE465001AFB4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5E2FE10422CBE465001AFB4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +90,18 @@
 				5E2FE10E22CBE468001AFB4B /* LaunchScreen.storyboard */,
 				5E2FE11122CBE468001AFB4B /* Info.plist */,
 				5E2FE11222CBE468001AFB4B /* main.m */,
+				5E0CBDF522CCEE5100DC17FD /* Eventlayout.h */,
+				5E0CBDF622CCEE5100DC17FD /* Eventlayout.m */,
+				5E0CBE0122CCF08200DC17FD /* DayEventViewManager.h */,
+				5E0CBE0222CCF08200DC17FD /* DayEventViewManager.m */,
+				5E0CBDF822CCEF5500DC17FD /* GridLine.h */,
+				5E0CBDF922CCEF5500DC17FD /* GridLine.m */,
+				5E0CBDFB22CCEF6A00DC17FD /* TimeLabel.h */,
+				5E0CBDFC22CCEF6A00DC17FD /* TimeLabel.m */,
+				5E0CBDFE22CCEF8100DC17FD /* CurrentTime.h */,
+				5E0CBDFF22CCEF8100DC17FD /* CurrentTime.m */,
+				5E0CBE0422CCF23200DC17FD /* EventCollectionViewCell.h */,
+				5E0CBE0522CCF23200DC17FD /* EventCollectionViewCell.m */,
 			);
 			path = CustomCalendar;
 			sourceTree = "<group>";
@@ -146,10 +176,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E0CBE0322CCF08200DC17FD /* DayEventViewManager.m in Sources */,
 				5E2FE10822CBE465001AFB4B /* ViewController.m in Sources */,
+				5E0CBDF722CCEE5100DC17FD /* Eventlayout.m in Sources */,
+				5E0CBE0022CCEF8100DC17FD /* CurrentTime.m in Sources */,
 				5E2FE11B22CC03BF001AFB4B /* SelectDayCollectionViewCell.m in Sources */,
+				5E0CBE0622CCF23200DC17FD /* EventCollectionViewCell.m in Sources */,
+				5E0CBDFA22CCEF5500DC17FD /* GridLine.m in Sources */,
 				5E2FE11322CBE468001AFB4B /* main.m in Sources */,
 				5E2FE10522CBE465001AFB4B /* AppDelegate.m in Sources */,
+				5E0CBDFD22CCEF6A00DC17FD /* TimeLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

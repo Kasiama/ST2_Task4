@@ -8,20 +8,21 @@
 #import <EventKit/EventKit.h>
 #import "ViewController.h"
 #import "SelectDayCollectionViewCell.h"
+#import "DayEventViewManager.h"
+#import "EventLayout.h"
+#import "GridLine.h"
+#import "TimeLabel.h"
+#import "CurrentTime.h"
 
-@interface DateEventsModel : NSObject
-@property (strong, nonatomic) NSDate *date;
-@property (strong, nonatomic) NSMutableArray *eventsArray;
 
-@end
 
 @interface ViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
-@property (strong, nonatomic) EKEventStore *eventStore;
+@property (strong, nonatomic) EKEventStore * _Nullable eventStore;
 
-@property (strong, nonatomic) UICollectionView *weekCollectionView;
-@property(strong,nonatomic) NSMutableArray *datesEvents;
-
-@property (strong, nonatomic) UICollectionView *eventsCollectionView;
+@property (strong, nonatomic) UICollectionView * _Nullable weekCollectionView;
+@property (strong, nonatomic) DayEventViewManager *dayEventViewManager;
+@property (strong, nonatomic) UICollectionView * _Nullable eventsCollectionView;
+@property (strong, nonatomic) NSMutableArray <DateEventsModel *> *dateEventsModelsArray;
 @end
 
 @implementation ViewController
@@ -66,18 +67,30 @@
                                               [self.weekCollectionView.heightAnchor constraintEqualToConstant:60]
                                               ]
      ];
+    
+    Eventlayout * dayEventsLayout = [Eventlayout new];
+    self.eventsCollectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:dayEventsLayout];
+    self.eventsCollectionView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:self.eventsCollectionView];
+    self.eventsCollectionView.backgroundColor = [UIColor whiteColor];
+    self.dayEventViewManager = [DayEventViewManager new];
+    self.dayEventViewManager.collectionView = self.eventsCollectionView;
+    
+    [dayEventsLayout registerClass:GridLine.class forDecorationViewOfKind:NSStringFromClass(GridLine.class)];
+    [self.eventsCollectionView registerClass:TimeLabel.class forSupplementaryViewOfKind:NSStringFromClass(TimeLabel.class) withReuseIdentifier:NSStringFromClass(TimeLabel.class)];
+   [self.eventsCollectionView registerClass:CurrentTime.class forSupplementaryViewOfKind:NSStringFromClass(CurrentTime.class) withReuseIdentifier:NSStringFromClass(CurrentTime.class)];;
+    
+    
+    [NSLayoutConstraint activateConstraints:@[
+                                              [self.eventsCollectionView.leadingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.leadingAnchor],
+                                              [self.eventsCollectionView.trailingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.trailingAnchor],
+                                              [self.eventsCollectionView.topAnchor constraintEqualToAnchor:self.weekCollectionView.bottomAnchor],
+                                              [self.eventsCollectionView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor]
+                                              ]
+     ];
+
+    
 }
-
-
-
-
-
-
-
-
-
-
-
 
 - (void)startDate:(NSDate **)start andEndDate:(NSDate **)end ofWeekOn:(NSDate *)date{
     
